@@ -1,0 +1,32 @@
+{% load static %}
+<style>
+    a.nav-link{
+        color:lime;}
+    a.nav-link:hover{
+        background-color: #fff357;
+    }
+    a.nav-link:active{
+        background-color: darkturquoise;
+    }
+
+</style>
+<div class="border-right border-warning h-100">
+
+    <div class="text-center">
+        <img src="{% static 'core/images/ssvgi.jpg' %}" alt="Profile" class="img-fluid rounded mt-5" width="100px" height="100px">
+        <h3 class="text-white mt-3 ft-font">Mohd Naved</h3>
+        <h6 class="text-white">Web Devloper & Data Science Learner</h6>
+        <hr class="border-light">
+        <nav id="ab" class="nav flex-column text-center">
+            <a href="{% url 'home' %}" class="nav-link"><h3>Home</h3></a>
+            <a href="{% url 'projects' %}" class="nav-link">Projects</a>
+            <a href="{% url 'skills' %}" class="nav-link">Skills</a>
+            <a href="{% url 'services' %}" class="nav-link">Services</a>
+            <a href="{% url 'contact' %}" class="nav-link {{contact}}">Contact</a>
+            <a href="{% url 'about' %}" class="nav-link {{about}}">About-us</a>
+
+
+        </nav>
+    </div>
+
+</div>

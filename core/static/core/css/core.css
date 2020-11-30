@@ -1,0 +1,21 @@
+.st-font{
+    font-family: 'Satisfy', cursive;
+}
+.ft-font{
+    font-family: 'Great Vibes', cursive;
+}
+html,body{
+    height: 100%;
+}
+.container-fluid{
+    min-height: 100%;
+}
+.i-colo{
+    color: #ffe623;
+}
+.i-c{
+    color: chartreuse;
+}
+.i-b{
+    color: white;
+}

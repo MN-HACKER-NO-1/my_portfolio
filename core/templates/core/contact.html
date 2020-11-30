@@ -1,0 +1,54 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="container mt-3">
+    <h1 class="text-white mb-5 border-bottom">Contact-me</h1>
+    <div class="row text-white mb-5">
+        <p class="mx-auto mb-4">
+            <h5 class="text-left i-c ">If you have any Questions / Query about my services, or just want to say hello, feel free to contact me via filling the form below or by mail.</h5>
+        </p>
+        <div class="col-sm-9 mb-5 mt-5">
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Full Name*</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Email*</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your Email id" required>
+                    </div>
+                    <div class="mb-3 col-md-12">
+                        <label for="inputTextarea">Message*</label>
+                        <textarea class="form-control" id="inputTextarea"required placeholder="Type message" maxlength="2000"></textarea>
+                    </div>
+                </div>
+                <button class="btn btn-primary col-md-12" type="submit"><b>Send Message</b></button>
+            </form>
+        </div>
+        <div class="col-sm-3 text-center mt-5">
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fas fa-map-marked-alt fa-2x i-c"></i>
+                    <p>Bareilly, U.P , INDIA</p>
+                </li>
+                <li>
+                    <i class="fas fa-phone mt-4 fa-2x i-c"></i>
+                    <p>+91 9368000783</p>
+                </li>
+                <li>
+                    <i class="fas fa-envelope mt-4 fa-2x i-c"></i>
+                    <p>mohammadnaved1352@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+<a href="https://www.facebook.com/mohammad.naved.54922/" target="_blank"><i style="color: white" class="fab fa-facebook-f  mr-4 fa-2x "></i></a>
+<a href="https://www.instagram.com/mn131211/" target="_blank"><i style="color:#ff4c4c; " class="fab fa-instagram  mr-4 fa-2x"></i></a>
+<a href="https://twitter.com/MOHDNAV88524588" target="_blank"><i class="fab fa-twitter  mr-4 fa-2x"></i></a>
+<a href="https://www.linkedin.com/in/mohd-naved-819848190/" target="_blank"><i style="color: white" class="fab fa-linkedin-in  mr-3 fa-2x"></i></a>
+<a href="https://github.com/MN-HACKER-NO-1" target="_blank"><i  class="fab fa-github mr-4 fa-3x i-colo"></i></a>
+</div>
+{% endblock content %}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mohd Naved</title>
+<link rel = "icon" href ="{% static 'core/images/icon image1.jpg' %}"
+        type = "image/x-icon">
+    <link rel="stylesheet" href="{% static 'core/css/all.min.css'%}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'core/css/core.css' %}">
+    <{% block corecss %}
+        <link rel="stylesheet" href="{% static 'core/css/core.css'%}"
+    {% endblock corecss%}
+
+</head>
+<body>
+
+<div class="container-fluid bg-dark">
+    <div class="row">
+        <div  class="col-sm-2">
+            {% include 'core/sidebar.html' %}
+
+        </div>
+        <div class="col-sm-10">
+
+            {% block content %}{% endblock content %}
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+<script src="{% static 'core/js/jquery.js' %}"></script>
+<script src="{% static 'core/js/bootstrap.js' %}"></script>
+<script src="{% static 'core/js/all.min.js' %}"></script>
+<script src="{% static 'core/js/popper.js' %}"></script>
+</body>
+</html>
